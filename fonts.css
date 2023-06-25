@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Geometric';
+    src: url('./fonts/coldesac-modern-geometric-font.otf');
+}
+
+@font-face {
+    font-family: 'Kanakira';
+    src: url('./fonts/kanakira-italic.ttf');
+}
+
+@font-face {
+    font-family: 'Postre';
+    src: url('./fonts/demo-postre.otf');
+}
+
+@font-face {
+    font-family: 'Boregtrialo';
+    src: url('./fonts/getboregtrialonly-2ozo3.ttf');
+}
