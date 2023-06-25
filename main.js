@@ -1,7 +1,7 @@
 const mouseFollower = document.querySelector(".mouse-follower");
 const section = document.querySelector("section");
 const anchorli = document.querySelectorAll("header nav ul li");
-const icon = document.querySelector("header span i ");
+const icon = document.querySelector("header span ");
 const computedRoot = document.querySelector(":root");
 const cs = getComputedStyle(computedRoot);
 const explore = document.querySelector(".box h1");
@@ -67,20 +67,14 @@ anchorli.forEach((lists) => {
   });
 });
 
-icon.addEventListener("mouseenter", () => {
-  icon.style.color = `hsla(244, 91%, 8%, 1)`;
-  mouseFollower.style.background = `rgb(255, 187, 0)`;
-});
-icon.addEventListener("mouseleave", () => {
-  icon.style.color = `rgb(255, 187, 0)`;
-  mouseFollower.style.background = `rgba(191, 135, 30, 0.832)`;
-});
-
 let i = 0;
 icon.addEventListener("click", () => {
   // console.log(cs.getPropertyValue('--bg-blck'));
   i = i + 1;
   if (i % 2 !== 0) {
+    icon.innerHTML = `<i class="fa-solid fa-lightbulb"></i>`;
+    icon.querySelector('i').style.color = `hsla(91, 23%, 2%, 1)`;
+
     document.body.style.setProperty("--bg-blck", `hsla(46, 13%, 84%, 1)`);
     explore.style.setProperty("--bg-lig-orange", `hsla(91, 23%, 2%, 1)`);
     explore.style.mixBlendMode = "normal";
@@ -88,8 +82,14 @@ icon.addEventListener("click", () => {
     anchorli.forEach((lists) => {
       lists.querySelector("a").style.color = `hsla(91, 23%, 2%, 1)`;
       lists.querySelector("a").style.mixBlendMode = "normal";
+      lists.addEventListener('mouseleave',() =>{
+        lists.querySelector("a").style.color = `hsla(91, 23%, 2%, 1)`;
+      });
     });
   } else {
+    icon.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+    icon.querySelector('i').style.color = `hsla(46, 13%, 84%, 1)`;
+
     document.body.style.setProperty("--bg-blck", `hsla(91, 23%, 2%, 1)`);
     explore.style.setProperty("--bg-lig-orange", `hsla(46, 64%, 47%, 1)`);
 
@@ -98,6 +98,9 @@ icon.addEventListener("click", () => {
     anchorli.forEach((lists) => {
       lists.querySelector("a").style.color = `hsla(46, 13%, 84%, 1)`;
       lists.querySelector("a").style.mixBlendMode = "difference";
+      lists.addEventListener('mouseleave',() =>{
+        lists.querySelector("a").style.color = `hsla(46, 13%, 84%, 1)`;
+      });
     });
   }
 });

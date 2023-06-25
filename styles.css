@@ -59,7 +59,7 @@ header {
 }
 
 header .img-box {
-    width: 150px;
+    width: 100px;
     aspect-ratio: 1;
     border-radius: 50%;
 }
@@ -92,7 +92,6 @@ header nav ul li a {
 header span i {
     font-size: var(--font-s-md);
     color: var(--bg-dar-orange);
-    mix-blend-mode: difference;
 }
 
 section {
@@ -179,7 +178,7 @@ div {
     .box p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 8;
         overflow: hidden;
     }
 }
@@ -216,7 +215,7 @@ div {
     .box p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 8;
+        -webkit-line-clamp: 10;
         overflow: hidden;
     }
 }
