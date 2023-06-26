@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
 </head>
 
 <body>
-    <div class="mouse-follower"></div>
+ 
     <header>
         <div class="img-box">
             <img src="./boy.png" alt="image">
@@ -21,16 +23,35 @@
         <ul>
             <li><a href="#HOME">HOME</a></li>
             <li><a href="#MENU">SERVICE</a></li>
-            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#STORIES">STORIES</a></li>
         </ul>
     </nav>
-    <span><i class="fa-solid fa-moon"></i></span>
+    <span><i class="fa-solid fa-lightbulb"></i></span>
     </header>
+
+    <main data-scroll-container>
     <section id="HOME">
         <div class="container">
+        <div class="my-intro">
+          <h1 data-scroll-speed="-2">I'M RISHABH</h1>
+          <h1>PORTFOLIO/06/23</h1>
+        </div>
+        <div class="about-intro">
+            <h2>WEB DEVELOPER</h2>
+            <p>last update . 2023</p>
+            <p>follow me</p>
+        </div>
+        <div class="work-intro">
+            <h2>SCROLL DOWN TO SEE MY WORK ON AWWARD WEBSITE INSPIRED BY MINIMAL DESIGNS.</h2>
+        </div>
+        </div>
+    </section>
+    
+    <section id="MENU">
+        <div class="container" id="pin">
             <div class="box">
-                <h1>EXPLORE</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eos unde quam necessitatibus
+                <h1 data-scroll-speed="-3" data-scroll-direction="vertical">EXPLORE</h1>
+                <p data-scroll-speed="-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eos unde quam necessitatibus
                     voluptates
                     deleniti veritatis, nam, quibusdam ipsa soluta sequi. Quos doloribus corporis esse cupiditate
                     quisquam.
@@ -47,6 +68,30 @@
             </div>
         </div>
     </section>
+
+    <section id="STORIES" class="story">
+        <div class="container">
+            <div class="story-1">
+                <h2>*WITCH GONNA PLAY THIS..</h2>
+            </div>
+            <div class="story-2">
+                <h2>WANT TO SEE SOME MAGIC</h2>
+            </div>
+            <div class="story-3">
+                <h2>PLAY WITH THE WORST..</h2>
+            </div>
+            <div class="story-4">
+                <h2>*GENERATIVE ARTIFICIAL DO..</h2>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
     <script src="main.js"></script>
 </body>
 

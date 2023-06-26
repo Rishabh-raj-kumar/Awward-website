@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: 'Kanakira';
+    font-family: 'Kanakira-italic';
     src: url('./fonts/kanakira-italic.ttf');
 }
 
@@ -16,4 +16,9 @@
 @font-face {
     font-family: 'Boregtrialo';
     src: url('./fonts/getboregtrialonly-2ozo3.ttf');
+}
+
+@font-face {
+    font-family: 'kanakira';
+    src: url('./fonts/kanakira-regular.ttf');
 }
