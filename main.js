@@ -21,7 +21,7 @@ icon.addEventListener("click", () => {
    homeContainer.style.setProperty('--forg-color','hsla(91, 23%, 2%, 1)');
 
     document.body.style.setProperty("--bg-blck", `hsla(46, 13%, 84%, 1)`);
-    explore.style.setProperty("--forg-color", `hsla(46, 64%, 47%, 1)`);
+    explore.style.setProperty("--forg-color", `hsla(91, 23%, 2%, 1)`);
     explore.style.mixBlendMode = "normal";
 
     para.style.setProperty("--forg-color",`hsla(91, 23%, 2%, 1)`);
